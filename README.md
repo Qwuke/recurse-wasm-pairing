@@ -1,20 +1,5 @@
 <div align="center">
-
-  <h1><code>wasm-pack-template</code></h1>
-
-  <strong>A template for kick starting a Rust and WebAssembly project using <a href="https://github.com/rustwasm/wasm-pack">wasm-pack</a>.</strong>
-
-  <p>
-    <a href="https://travis-ci.org/rustwasm/wasm-pack-template"><img src="https://img.shields.io/travis/rustwasm/wasm-pack-template.svg?style=flat-square" alt="Build Status" /></a>
-  </p>
-
-  <h3>
-    <a href="https://rustwasm.github.io/docs/wasm-pack/tutorials/npm-browser-packages/index.html">Tutorial</a>
-    <span> | </span>
-    <a href="https://discordapp.com/channels/442252698964721669/443151097398296587">Chat</a>
-  </h3>
-
-  <sub>Built with 🦀🕸 by <a href="https://rustwasm.github.io/">The Rust and WebAssembly Working Group</a></sub>
+    A simple Rust WASM Game of Life implementation by [Matthew Tromp](https://github.com/MatthewTromp), [Isaac Awasi Oppong Jr](https://github.com/akwasiio), and myself for the initial pair programming project. So fun!
 </div>
 
 ## About
@@ -32,13 +17,14 @@ templates and usages of `wasm-pack`.
 
 ## 🚴 Usage
 
-### 🐑 Use `cargo generate` to Clone this Template
-
-[Learn more about `cargo generate` here.](https://github.com/ashleygwilliams/cargo-generate)
+Built for use with Node version 16 
 
 ```
-cargo generate --git https://github.com/rustwasm/wasm-pack-template.git --name my-project
-cd my-project
+cargo build
+wasm-pack build
+cd www
+npm install
+npm run start
 ```
 
 ### 🛠️ Build with `wasm-pack build`
