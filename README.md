@@ -1,6 +1,5 @@
-<div align="center">
-    A simple Rust WASM Game of Life implementation by [Matthew Tromp](https://github.com/MatthewTromp), [Isaac Awasi Oppong Jr](https://github.com/akwasiio), and myself for the initial pair programming project. So fun!
-</div>
+### A simple Rust WASM Game of Life implementation by [Matthew Tromp](https://github.com/MatthewTromp), [Isaac Awasi Oppong Jr](https://github.com/akwasiio), and myself for the initial pair programming project. So fun!
+
 
 ## About
 
