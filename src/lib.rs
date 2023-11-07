@@ -95,6 +95,18 @@ impl Universe {
     pub fn render(&self) -> String {
         self.to_string()
     }
+
+    pub fn width(&self) -> u32 {
+        self.width
+    }
+
+    pub fn height(&self) -> u32 {
+        self.height
+    }
+
+    pub fn cells(&self) -> *const Cell {
+        self.cells.as_ptr()
+    }
 }
 
 impl fmt::Display for Universe {
@@ -106,8 +118,7 @@ impl fmt::Display for Universe {
                 cells.into_iter()
                 .map(|cell| match cell {
                     Cell::Alive => '🤠',
-                    Cell::Dead => '💀'
-                })
+                    Cell::Dead => '💀' })
                 .chain(Some('\n')))
             .for_each(|cells: char| write!(f, "{}", cells).unwrap());
         Ok(())
